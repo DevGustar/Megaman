@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega-Clone | 8-Bit Web Platformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>[ MEGA-CLONE ]</h1>
+        <div id="canvas-wrapper">
+            <canvas id="gameCanvas" width="800" height="480"></canvas>
+            <div id="hud">
+                <div class="health-bar" id="player-hp-bar">
+                    <div class="health-fill" id="player-hp"></div>
+                </div>
+                <!-- Charged Indicator -->
+                <div id="charge-meter"></div>
+            </div>
+            <div id="boss-hud" style="display: none;">
+                <div class="health-bar" id="boss-hp-bar">
+                    <div class="health-fill" id="boss-hp" style="background: #e74c3c;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="controls-hint">
+            <p><strong>ARROWS:</strong> Move & Crouch  |  <strong>Z:</strong> Jump / Double Jump  |  <strong>X:</strong> Shoot (Hold for Charged)</p>
+            <p><strong>DOWN + Z:</strong> Slide</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
