@@ -90,8 +90,8 @@ export class Player {
             this.jumpKeyPressed = false;
         }
 
-        // Handle Shoot (X)
-        if (keys['x']) {
+        // Handle Shoot (L)
+        if (keys['l']) {
             this.isCharging = true;
             this.chargeTime++;
         } else {
